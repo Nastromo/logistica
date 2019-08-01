@@ -6,29 +6,21 @@ import '../table.css';
 
 
 
-export class ElementList extends Component {
+export class DriverList extends Component {
 
     initColumns = () => {
         return [
             {
-                Header: 'Element',
-                accessor: 'element',
+                Header: 'Code',
+                accessor: 'code',
             },
             {
-                Header: 'Result',
-                accessor: 'result',
+                Header: 'Name',
+                accessor: 'name',
             },
             {
-                Header: 'Ranges',
-                accessor: 'ranges',
-            },
-            {
-                Header: 'Previous',
-                accessor: 'previous',
-            },
-            {
-                Header: 'Date',
-                accessor: 'date',
+                Header: 'Region',
+                accessor: 'region',
             }
         ];
     }
@@ -55,6 +47,7 @@ export class ElementList extends Component {
     renderList = (list, text) => {
         return (
             <div className="content-table small-t basis50">
+                <div className="create-btn">Create</div>
                 <ReactTable
                     data={list}
                     getTdProps={this.handleRowClick}
@@ -82,7 +75,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    
+
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(ElementList)
+export default connect(mapStateToProps, mapDispatchToProps)(DriverList)

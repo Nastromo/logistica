@@ -550,3 +550,9 @@ div.rt-th.-cursor-pointer:first-child div{
 .rt-tr div.rt-th.-cursor-pointer {
     padding-bottom: 0;
 }
+
+.driv-set {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #dadada;
+}
