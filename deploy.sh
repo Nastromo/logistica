@@ -22,7 +22,7 @@ ENDSSH
 rm app.tar.gz
 
 ssh -i "devempr.pem" ubuntu@192.168.20.216 << 'ENDSSH'
-rm -rf accessioning/* accessioning/.*
-tar xf app.tar.gz -C accessioning
+rm -rf logistics/* logistics/.*
+tar xf app.tar.gz -C logistics
 rm app.tar.gz
 ENDSSH

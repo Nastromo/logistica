@@ -17,7 +17,7 @@ export class Navigation extends Component {
             case `/account/main`:
                 this.setActive(this.pending);
                 break;
-            case `/account/option2`:
+            case `/account/maintenance`:
                 this.setActive(this.processing);
                 break;
             default: break;
@@ -56,7 +56,7 @@ export class Navigation extends Component {
                             id="option2"
                             onClick={this.handleClick}
                             innerRef={el => this.processing = el}
-                            to="/account/option2">Option2</Link>
+                            to="/account/maintenance">Driver Maintenance</Link>
                     </div>
 
                     <div className="work-info">
@@ -69,12 +69,12 @@ export class Navigation extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    
+
 
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    
+
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Navigation))
